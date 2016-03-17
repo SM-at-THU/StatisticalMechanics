@@ -57,63 +57,73 @@
 \section*{Problem 3.7}
 
 \section*{Problem 3.11}
-Suppose $pV^{n} = C$, so the work done is
-\begin{equation}
-\Delta W = \int^{V_{2}}_{V_{1}} \frac{C}{V^{n}} dV = \frac{C}{n-1} (V^{1-n}_{2} - V^{1-n}_{1})
-\end{equation}
-The energy difference is given by
-\begin{equation}
-\Delta U = p_{2}V_{2} - p_{1}V_{1} = C (V^{1-n}_{2} - V^{1-n}_{1})
-\end{equation}
-Therefore, the heat absorbed is
-\begin{equation}
-\Delta Q =  C\frac{n-2}{n-1} (V^{1-n}_{2} - V^{1-n}_{1})
-\end{equation}
+	Suppose $pV^{n} = C$, so the work done is
+	\begin{equation}
+	\Delta W = \int^{V_{2}}_{V_{1}} \frac{C}{V^{n}} dV = \frac{C}{n-1} (V^{1-n}_{2}	 - V^{1-n}_{1})
+	\end{equation}
+	The energy difference is given by
+	\begin{equation}
+	\Delta U = p_{2}V_{2} - p_{1}V_{1} = C (V^{1-n}_{2} - V^{1-n}_{1})
+	\end{equation}
+	Therefore, the heat absorbed is
+	\begin{equation}
+	\Delta Q =  C\frac{n-2}{n-1} (V^{1-n}_{2} - V^{1-n}_{1})
+	\end{equation}
 
 \section*{Problem 3.12}
-The Hamiltonian of the classical system can be written as:
-\begin{equation}
-H = \sum_{i}^{N} \frac{\mathbf{p}_i^2}{2m}+\sum_{i}^{N}U(\mathbf{x}_i)
-\end{equation}
-So the partition function of the system is:
-\begin{eqnarray}
-Q(\beta,N,V) &=& \frac{1}{N!h^{3N}}\int\prod_{i=1}^N d^3x_id^3p_i e^{-\beta H(x,p)}\nonumber\\
-&=&\frac{1}{N!}\left[\left(\frac{2\pi m\beta^{-1}}{h^2}\right)^{3N/2}\int \prod_{i}d^3x_i e^{-\beta U(\mathbf{x}_i)}\right]\nonumber\\
-\end{eqnarray}
-So the Helmholtz potential is $A = -kT\ln Q$ and the entropy $S$ is the derivative of free energy:
-\begin{eqnarray}
-S &=& -\frac{\partial A}{\partial T}\nonumber\\
-&=&-\frac{\partial}{\partial T}\left\{-kT\ln\left[\frac{1}{N!}\left(\frac{2\pi mkT}{h^2}\right)^{3N/2}\left(\int \prod_id^3x_i e^{-\beta U(\mathbf{x}_i)}\right)\right]\right\}\nonumber\\
-&=&-\frac{\partial}{\partial T}\left\{-NkT\ln\left[\frac{1}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\left(\int \prod_id^3x_i e^{-\beta U(\mathbf{x}_i)}\right)^{1/N}\right]-NkT\right\}\nonumber\\
-&=&Nk\ln\left[\frac{1}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\left(\int\prod_i d^3x_i e^{-\beta U(\mathbf{x}_i)}\right)^{1/N}\right]+\frac{3}{2}Nk + \frac{1}{T}\frac{\int \prod_i d^3x_i \sum_i U(\mathbf{x}_i)e^{-\beta U(\mathbf{x}_i)}}{\int \prod_i d^3x_i e^{-\beta U(\mathrm{x}_i)}} + Nk\nonumber\\
-&=&\frac{5Nk}{2} + Nk\ln\left[\frac{1}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\left(\int\prod_i d^3x_i e^{-\beta U(\mathbf{x}_i)}\right)^{1/N}\right] + \frac{\overline{U}}{T}\nonumber\\
-&=&\frac{5Nk}{2} + Nk\ln\left[\frac{1}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}e^{\frac{\overline{U}}{NkT}}\left(\int\prod_i d^3x_i e^{-\beta U(\mathbf{x}_i)}\right)^{1/N}\right] \nonumber\\
-&=&Nk\left\{\frac{5}{2}+ \ln \left[\frac{\overline{V}}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\right]\right\}
-\end{eqnarray}
-Up till now we have shown the entropy of such a system. So if the potential energy is just a constant, the ``free volume'' is the common volume of classical ideal gas. 
+	The Hamiltonian of the classical system can be written as:
+	\begin{equation}
+	H = \sum_{i}^{N} \frac{\mathbf{p}_i^2}{2m}+\sum_{i}^{N}U(\mathbf{x}_i)
+	\end{equation}
+	So the partition function of the system is:
+	\begin{eqnarray}
+	Q(\beta,N,V) &=& \frac{1}{N!h^{3N}}\int\prod_{i=1}^N d^3x_id^3p_i e^{-\beta H(x,p)}\nonumber\\
+	&=&\frac{1}{N!}\left[\left(\frac{2\pi m\beta^{-1}}{h^2}\right)^{3N/2}\int \prod_{i}d^3x_i e^{-\beta U(\mathbf{x}_i)}\right]\nonumber\\
+	\end{eqnarray}
+	So the Helmholtz potential is $A = -kT\ln Q$ and the entropy $S$ is the derivative of free energy:
+	\begin{eqnarray}
+	S &=& -\frac{\partial A}{\partial T}\nonumber\\
+	&=&-\frac{\partial}{\partial T}\left\{-kT\ln\left[\frac{1}{N!}\left(\frac{2\pi mkT}{h^2}\right)^{3N/2}\left(\int \prod_id^3x_i e^{-\beta U(\mathbf{x}_i)}\right)\right]\right\}\nonumber\\
+	&=&-\frac{\partial}{\partial T}\left\{-NkT\ln\left[\frac{1}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\left(\int \prod_id^3x_i e^{-\beta U(\mathbf{x}_i)}\right)^{1/N}\right]-NkT\right\}\nonumber\\
+	&=&Nk\ln\left[\frac{1}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\left(\int\prod_i d^3x_i e^{-\beta U(\mathbf{x}_i)}\right)^{1/N}\right]+\frac{3}{2}Nk + \frac{1}{T}\frac{\int \prod_i d^3x_i \sum_i U(\mathbf{x}_i)e^{-\beta U(\mathbf{x}_i)}}{\int \prod_i d^3x_i e^{-\beta U(\mathrm{x}_i)}} + Nk\nonumber\\
+	&=&\frac{5Nk}{2} + Nk\ln\left[\frac{1}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\left(\int\prod_i d^3x_i e^{-\beta U(\mathbf{x}_i)}\right)^{1/N}\right] + \frac{\overline{U}}{T}\nonumber\\
+	&=&\frac{5Nk}{2} + Nk\ln\left[\frac{1}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}e^{\frac{\overline{U}}{NkT}}\left(\int\prod_i d^3x_i e^{-\beta U(\mathbf{x}_i)}\right)^{1/N}\right] \nonumber\\
+	&=&Nk\left\{\frac{5}{2}+ \ln \left[\frac{\overline{V}}{N}\left(\frac{2\pi mkT}{h^2}\right)^{3/2}\right]\right\}
+	\end{eqnarray}
+	Up till now we have shown the entropy of such a system. So if the potential energy is just a constant, the ``free volume'' is the common volume of classical ideal gas. 
 
-Then consider about the hard sphere gas. The potential energy is:
-$$
-U(\mathbf{x}_i)=\left\{\begin{array}{ll}
-0 &|\mathbf{x}_i-\mathbf{x}_j| > D\\
-\infty &|\mathbf{x}_i-\mathbf{x}_j| < D
-\end{array}\right.
-$$
-It is obvious that the average of potential energy is $\overline{U} = 0$, so the free volume is
-\begin{eqnarray}
-\overline{V}^N&=&\int \prod_i d^3x_i\,e^{-\beta U(\mathbf{x}_i)}\nonumber\\
-&=&\int d^3x_N\int d^3x_{N-1}\cdots \int d^3x_1 e^{-\beta U(\mathbf{x}_i)}\nonumber\\
-&=&V\left(V-\frac{4\pi}{3}D^3\right)\left(V-2\cdot\frac{4\pi}{3}D^3\right)\cdots\left(V-\frac{N-1}{3}4\pi D^3\right)
-\end{eqnarray}
-Define $v_0 = \pi D^3/6$ is the volume a sphere, so the gas-law will be:
-\begin{eqnarray}
-P &=& \frac{NkT}{\overline{V}}\frac{\partial \overline{V}}{\partial V}\nonumber\\
-&=& kT\left(\frac{1}{V}+\frac{1}{V-8v_0}\cdots \frac{1}{V+8(N-1)v_0}\right)\nonumber\\
-&\simeq & kT\left(\frac{N+N^2\frac{4v_0}{V}}{V}\right)\nonumber\\
-&=& kT\frac{N}{V\frac{1}{1+4Nv_0/V}}\nonumber\\
-&\simeq &\frac{NkT}{V-4Nv_0}
-\end{eqnarray}
-This result is the same as we have seen in Problem 1.4.
+	Then consider about the hard sphere gas. The potential energy is:
+	$$
+	U(\mathbf{x}_i)=\left\{\begin{array}{ll}
+	0 &|\mathbf{x}_i-\mathbf{x}_j| > D\\
+	\infty &|\mathbf{x}_i-\mathbf{x}_j| < D
+	\end{array}\right.
+	$$
+	It is obvious that the average of potential energy is $\overline{U} = 0$, so the free volume is
+	\begin{eqnarray}
+	\overline{V}^N&=&\int \prod_i d^3x_i\,e^{-\beta U(\mathbf{x}_i)}\nonumber\\
+	&=&\int d^3x_N\int d^3x_{N-1}\cdots \int d^3x_1 e^{-\beta U(\mathbf{x}_i)}\nonumber\\
+	&=&V\left(V-\frac{4\pi}{3}D^3\right)\left(V-2\cdot\frac{4\pi}{3}D^3\right)\cdots\left(V-\frac{N-1}{3}4\pi D^3\right)
+	\end{eqnarray}
+	Define $v_0 = \pi D^3/6$ is the volume a sphere, so the gas-law will be:
+	\begin{eqnarray}
+	P &=& \frac{NkT}{\overline{V}}\frac{\partial \overline{V}}{\partial V}\nonumber\\
+	&=& kT\left(\frac{1}{V}+\frac{1}{V-8v_0}\cdots \frac{1}{V+8(N-1)v_0}\right)\nonumber\\
+	&\simeq & kT\left(\frac{N+N^2\frac{4v_0}{V}}{V}\right)\nonumber\\
+	&=& kT\frac{N}{V\frac{1}{1+4Nv_0/V}}\nonumber\\
+	&\simeq &\frac{NkT}{V-4Nv_0}
+	\end{eqnarray}
+	This result is the same as we have seen in Problem 1.4.
+
+\section*{Problem 3.13} % (fold)
+\label{sec:problem_3_13}
+	(a)Use classical method,it is easy to get partition function.
+	$$Q_N=\frac{1}{N_1!N_2!}[\frac{V}{h^3}(2\pi m_1kT)^\frac{3}{2}]^{N_1}[\frac{V}{h^3}(2\pi m_2kT)^\frac{3}{2}]^{N_2}$$
+	For the same reason.We get the partition function of another system:
+	$$Q_N=\frac{1}{(N_1+N_2)!}[\frac{V}{h^3}(2\pi mkT)^\frac{3}{2}]^{N_1+N_2}$$
+	$m$ is mixed mass.
+	$$m=\frac{N_1m_1+N_2m_2}{N_1+N_2}$$
+% section problem_3_13 (end)
 
 
 \section*{Problem 3.15} % (fold)
@@ -142,127 +152,170 @@ This result is the same as we have seen in Problem 1.4.
 
 
 \section*{Problem 3.21}
-\noindent (a) Classically, the harmonic equation of motion leads to $x = A \sin \omega t$. As a result, the kinetic energy and potential energy will be $m \omega^{2} A^{2} \cos^{2} \omega t /2$ and $m \omega^{2} A^{2} \sin^{2} \omega t /2$ respectively. Average them it's easy to see that $\bar{K} = \bar{U} =m \omega^{2} A^{2}/4$.\\
-Quantum-mechanically, $\psi = \sum_{n} c_{n} \psi_{n}$ where $\psi_{n}$ is the \emph{n}-th Hermitian polynomial. Using the recursive relations, we have
-\begin{align}
-&\bar{K} = -\frac{\hbar^{2}}{2m} \sum_{n} |c_{n}|^{2} \int \psi^{*} \frac{d^{2}}{dx^{2}} \psi dx = \sum_{n} |c_{n}|^{2} \frac{\hbar \omega (2n+1)}{4} = \frac{1}{2} \sum_{n} |c_{n}|^{2} E_{n}\\
-&\bar{U} = \frac{m \omega^{2}}{2} \sum_{n} |c_{n}|^{2} \int \psi^{*} x^{2} \psi dx= \sum_{n} |c_{n}|^{2} \frac{\hbar \omega (2n+1)}{4} = \frac{1}{2} \sum_{n} |c_{n}|^{2} E_{n}
-\end{align}
-\noindent (b) In Bohr-sommerfeld model, a quantized orbits are hypothesized, namely $m_{e}vr = n \hbar$. In the \emph{n}-th orbit, the total energy is $E_{n} = - Z^{2}k^{2}e^{4}m_{e}/2 \hbar^{2} n^{2}$. The radius of which is $r_{n} = n^{2} \hbar^{2} / Zke^{2}m_{e}$. By a naive calculation $\bar{U} = - Z^{2}k^{2}e^{4}m_{e}/ \hbar^{2} n^{2}$ and $\bar{T} = Z^{2}k^{2}e^{4}m_{e}/2 \hbar^{2} n^{2}$.\\
-In the Schroedinger hydrogen atom, $\psi_{nlm} = R_{nl}(r) Y_{lm}(\theta, \phi)$. The kinetic energy is given by
-\begin{eqnarray}
-\bar{T} &=& \frac{\hbar^{2}}{2m} \int \psi^{*}_{nlm} (\frac{d^{2}}{dr^{2}} + \frac{2}{r} \frac{d}{dr} - \frac{l(l+1)}{r^{2}})\psi_{nlm} r^{2} \sin \theta dr d\theta d\phi \notag \\
-&=& \frac{\hbar^{2}}{2m} \int R_{nl}(r) (\frac{1}{n^{2}a^{2}}) R_{nl}(r) r^{2}dr \notag \\
-&=& \frac{e^{2}}{2a n^{2}}
-\end{eqnarray}
-so $\bar{U} = - e^{2}/a n^{2}$. \emph{a} is the Bohr radius.\\
-\noindent (c) This is also a central force case. The results are quite identical to (b).
+	\noindent (a) Classically, the harmonic equation of motion leads to $x = A \sin \omega t$. As a result, the kinetic energy and potential energy will be $m \omega^{2} A^{2} \cos^{2} \omega t /2$ and $m \omega^{2} A^{2} \sin^{2} \omega t /2$ respectively. Average them it's easy to see that $\bar{K} = \bar{U} =m \omega^{2} A^{2}/4$.\\
+	Quantum-mechanically, $\psi = \sum_{n} c_{n} \psi_{n}$ where $\psi_{n}$ is the \emph{n}-th Hermitian polynomial. Using the recursive relations, we have
+	\begin{align}
+	&\bar{K} = -\frac{\hbar^{2}}{2m} \sum_{n} |c_{n}|^{2} \int \psi^{*} \frac{d^{2}}{dx^{2}} \psi dx = \sum_{n} |c_{n}|^{2} \frac{\hbar \omega (2n+1)}{4} = \frac{1}{2} \sum_{n} |c_{n}|^{2} E_{n}\\
+	&\bar{U} = \frac{m \omega^{2}}{2} \sum_{n} |c_{n}|^{2} \int \psi^{*} x^{2} \psi dx= \sum_{n} |c_{n}|^{2} \frac{\hbar \omega (2n+1)}{4} = \frac{1}{2} \sum_{n} |c_{n}|^{2} E_{n}
+	\end{align}
+	\noindent (b) In Bohr-sommerfeld model, a quantized orbits are hypothesized, namely $m_{e}vr = n \hbar$. In the \emph{n}-th orbit, the total energy is $E_{n} = - Z^{2}k^{2}e^{4}m_{e}/2 \hbar^{2} n^{2}$. The radius of which is $r_{n} = n^{2} \hbar^{2} / Zke^{2}m_{e}$. By a naive calculation $\bar{U} = - Z^{2}k^{2}e^{4}m_{e}/ \hbar^{2} n^{2}$ and $\bar{T} = Z^{2}k^{2}e^{4}m_{e}/2 \hbar^{2} n^{2}$.\\
+	In the Schroedinger hydrogen atom, $\psi_{nlm} = R_{nl}(r) Y_{lm}(\theta, \phi)$. The kinetic energy is given by
+	\begin{eqnarray}
+	\bar{T} &=& \frac{\hbar^{2}}{2m} \int \psi^{*}_{nlm} (\frac{d^{2}}{dr^{2}} + \frac{2}{r} \frac{d}{dr} - \frac{l(l+1)}{r^{2}})\psi_{nlm} r^{2} \sin \theta dr d\theta d\phi \notag \\
+	&=& \frac{\hbar^{2}}{2m} \int R_{nl}(r) (\frac{1}{n^{2}a^{2}}) R_{nl}(r) r^{2}dr \notag \\
+	&=& \frac{e^{2}}{2a n^{2}}
+	\end{eqnarray}
+	so $\bar{U} = - e^{2}/a n^{2}$. \emph{a} is the Bohr radius.\\
+	\noindent (c) This is also a central force case. The results are quite identical to (b).
 
 \section*{Problem 3.22}
-Anharmonic Oscillator.
+	Anharmonic Oscillator.
 
-This anharmonic oscillator has the Hamiltonian:
-$$
-H = \frac{p^2}{2m} + \frac{1}{4}kx^4
-$$
-So the canonical partition function of the system is:
-\begin{equation}
-Q = \frac{1}{h}\int dpdx\,e^{-\beta\left(\frac{p^2}{2m} + \frac{1}{4}kx^4\right) }
-\end{equation}
-Use the ``equipartition theorem'', we can get the following result:
-\begin{equation}
-\Big{\langle} x \frac{\partial H}{\partial x}\Big{\rangle} =kT
-\end{equation}
-Thus because $\partial H/\partial x = kx^3$, we can get
-$$
-x\frac{\partial H}{\partial x} = kx^4 = 4V
-$$
-So the expectation value of the potential is $\langle V\rangle = kT/4$. For the same reason, we can get the mean value of the kinetic energy:
-\begin{equation}
-\langle K\rangle = \frac{1}{2}\Big{\langle} p\frac{\partial H}{\partial p}\Big{\rangle} = \frac{kT}{2}
-\end{equation}
-So clearly we can get $\langle K\rangle = 2\langle V\rangle$.
+	This anharmonic oscillator has the Hamiltonian:
+	$$
+	H = \frac{p^2}{2m} + \frac{1}{4}kx^4
+	$$
+	So the canonical partition function of the system is:
+	\begin{equation}
+	Q = \frac{1}{h}\int dpdx\,e^{-\beta\left(\frac{p^2}{2m} + \frac{1}{4}kx^4\right) }
+	\end{equation}
+	Use the ``equipartition theorem'', we can get the following result:
+	\begin{equation}
+	\Big{\langle} x \frac{\partial H}{\partial x}\Big{\rangle} =kT
+	\end{equation}
+	Thus because $\partial H/\partial x = kx^3$, we can get
+	$$
+	x\frac{\partial H}{\partial x} = kx^4 = 4V
+	$$
+	So the expectation value of the potential is $\langle V\rangle = kT/4$. For the same reason, we can get the mean value of the kinetic energy:
+	\begin{equation}
+	\langle K\rangle = \frac{1}{2}\Big{\langle} p\frac{\partial H}{\partial p}\Big{\rangle} = \frac{kT}{2}
+	\end{equation}
+	So clearly we can get $\langle K\rangle = 2\langle V\rangle$.
+	
+
+\section*{Problem 3.23} % (fold)
+\label{sec:problem_3_23}
+	According to the equation 3.7.15
+	$$\frac{PV}{NkT}=1-\frac{1}{NdkT}*\overline{\sum_{i<j}\frac{\partial{u(r_{ij})}}{\partial{r_{ij}}}r_{ij}}$$
+	For the ideal gas.There is not interaction term.
+	$$PV=NkT$$
+	The Hamiltonian of the system happens to be a quadratic function of its coordinates.The virial theorem states that
+	$$\boldsymbol{\nu_0}=-3NkT$$
+	So we can infer that
+	$$\boldsymbol{\nu_0}=-3PV$$
+	Let's consider the interaction between the particles and walls of container. 
+	$$\boldsymbol{\nu_0}=-P\mathlarger{\int}(div\boldsymbol{ r})dV=-3PV$$
+	They show walls of container are the main factor interaction with particles.
+% section problem_3_23 (end)
+
 
 \section*{Problem 3.31}
-``Partition function'' for single particle is
-\begin{equation}
-Q_{1} = 1 + e^{-\varepsilon/kT}.
-\end{equation}
-So a list of quatities can be obtained:
-\begin{align}
-&Q_{N} = (1 + e^{-\varepsilon/kT})^{N} \\
-&A = - NkT \ln (1 + e^{-\varepsilon/kT}) \\
-&\mu = - kT \ln (1 + e^{-\varepsilon/kT}) \\
-&p=0 \\
-&S = Nk \ln (1 + e^{-\varepsilon/kT}) + \frac{N \varepsilon}{T} \frac{e^{-\varepsilon/kT}}{1+e^{-\varepsilon/kT}} \\
-&U =  N \varepsilon \frac{e^{-\varepsilon/kT}}{1+e^{-\varepsilon/kT}} \\
-&C_{p} = C_{V} =  \frac{N \varepsilon^{2} e^{-\varepsilon/kT}}{kT^{2} (1+e^{-\varepsilon/kT})^{2}}
-\end{align}
-This specific heat is sometimes referred to \emph{Schottky anomaly}. 
+	``Partition function'' for single particle is
+	\begin{equation}
+	Q_{1} = 1 + e^{-\varepsilon/kT}.
+	\end{equation}
+	So a list of quatities can be obtained:
+	\begin{align}
+	&Q_{N} = (1 + e^{-\varepsilon/kT})^{N} \\
+	&A = - NkT \ln (1 + e^{-\varepsilon/kT}) \\
+	&\mu = - kT \ln (1 + e^{-\varepsilon/kT}) \\
+	&p=0 \\
+	&S = Nk \ln (1 + e^{-\varepsilon/kT}) + \frac{N \varepsilon}{T} \frac{e^{-\varepsilon/kT}}{1+e^{-\varepsilon/kT}} \\
+	&U =  N \varepsilon \frac{e^{-\varepsilon/kT}}{1+e^{-\varepsilon/kT}} \\
+	&C_{p} = C_{V} =  \frac{N \varepsilon^{2} e^{-\varepsilon/kT}}{kT^{2} (1+e^{-\varepsilon/kT})^{2}}
+	\end{align}
+	This specific heat is sometimes referred to \emph{Schottky anomaly}. 
 
 \section*{Problem 3.32}
-\paragraph{(a)} Since the distribution is given by canonical distribution, the probabilities are:
-$$
-p_i = Q^{-1}g_ie^{-\beta \epsilon_i}
-$$
-and the entropy should be:
-\begin{eqnarray}\label{entropy}
-S &=& -k\left[p_1\ln(p_1/g_1)+p_2\ln(p_2/g_2)\right]\nonumber\\
-&=& -k\left[\frac{g_1e^{-\beta \epsilon_1}}{Q}\ln \frac{e^{-\beta\epsilon_1}}{Q}+\frac{g_2e^{-\beta \epsilon_2}}{Q}\ln \frac{e^{-\beta\epsilon_2}}{Q}\right]\nonumber\\
-&=& k\ln Q + \frac{1}{T}\frac{g_1\epsilon_1e^{-\beta\epsilon_1}+g_2\epsilon_2e^{-\beta\epsilon_2}}{Q}\nonumber\\
-&=&k\ln g_1 + k\ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{1}{T}\frac{g_2(\epsilon_2-\epsilon_1)e^{-\beta\epsilon_2}}{Q}\nonumber\\
-&=&k\left[\ln g_1 + \ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{g_2e^{-\beta\epsilon_2}x}{Q}\right]\nonumber\\
-&=&k\left[\ln g_1 + \ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{x}{1+\frac{g_1}{g_2}e^x}\right]
-\end{eqnarray}
-When $g_1=g_2=1$, the situation is the same as Fermi oscillator with energy $0$ and $\epsilon_2-\epsilon_1$.
-\paragraph{(b)}
-The entropy is the derivative of the free energy, so we can get the entropy by the following process:
-\begin{eqnarray}
-S &=& -\frac{\partial A}{\partial T}\nonumber\\
-&=&\frac{\partial}{\partial T}\left\{kT\ln Q\right\}\nonumber\\
-&=&k\ln Q +\frac{1}{T}\frac{g_1\epsilon_1e^{-\beta\epsilon_1}+g_2\epsilon_2e^{-\beta\epsilon_2}}{Q}\nonumber\\
-&=&k\left[\ln g_1 + \ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{x}{1+\frac{g_1}{g_2}e^x}\right]
-\end{eqnarray}
-which is the same as we get in (a).
-\paragraph{(c)}
-Clearly from equation (\ref{entropy}), when temperature is $T=0$, the entropy will be:
-\begin{equation}
-S = \lim_{x\rightarrow +\infty}k\left[\ln g_1 + \ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{x}{1+\frac{g_1}{g_2}e^x}\right]=k\ln g_1
-\end{equation}
-From the distribution of canonical ensemble, we know that when the temperature is $T=0$, the system will stay on the ground state. Since the ground is g-fold degenerate, there are $g_1$ possible states. So the entropy is $S = k\ln g_1$.
+	\paragraph{(a)} Since the distribution is given by canonical distribution, the probabilities are:
+	$$
+	p_i = Q^{-1}g_ie^{-\beta \epsilon_i}
+	$$
+	and the entropy should be:
+	\begin{eqnarray}\label{entropy}
+	S &=& -k\left[p_1\ln(p_1/g_1)+p_2\ln(p_2/g_2)\right]\nonumber\\
+	&=& -k\left[\frac{g_1e^{-\beta \epsilon_1}}{Q}\ln \frac{e^{-\beta\epsilon_1}}{Q}+\frac{g_2e^{-\beta \epsilon_2}}{Q}\ln \frac{e^{-\beta\epsilon_2}}{Q}\right]\nonumber\\
+	&=& k\ln Q + \frac{1}{T}\frac{g_1\epsilon_1e^{-\beta\epsilon_1}+g_2\epsilon_2e^{-\beta\epsilon_2}}{Q}\nonumber\\
+	&=&k\ln g_1 + k\ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{1}{T}\frac{g_2(\epsilon_2-\epsilon_1)e^{-\beta\epsilon_2}}{Q}\nonumber\\
+	&=&k\left[\ln g_1 + \ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{g_2e^{-\beta\epsilon_2}x}{Q}\right]\nonumber\\
+	&=&k\left[\ln g_1 + \ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{x}{1+\frac{g_1}{g_2}e^x}\right]
+	\end{eqnarray}
+	When $g_1=g_2=1$, the situation is the same as Fermi oscillator with energy $0$ and $\epsilon_2-\epsilon_1$.
+	\paragraph{(b)}
+	The entropy is the derivative of the free energy, so we can get the entropy by the following process:
+	\begin{eqnarray}
+	S &=& -\frac{\partial A}{\partial T}\nonumber\\
+	&=&\frac{\partial}{\partial T}\left\{kT\ln Q\right\}\nonumber\\
+	&=&k\ln Q +\frac{1}{T}\frac{g_1\epsilon_1e^{-\beta\epsilon_1}+g_2\epsilon_2e^{-\beta\epsilon_2}}{Q}\nonumber\\
+	&=&k\left[\ln g_1 + \ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{x}{1+\frac{g_1}{g_2}e^x}\right]
+	\end{eqnarray}
+	which is the same as we get in (a).
+	\paragraph{(c)}
+	Clearly from equation (\ref{entropy}), when temperature is $T=0$, the entropy will be:
+	\begin{equation}
+	S = \lim_{x\rightarrow +\infty}k\left[\ln g_1 + \ln\left(1+\frac{g_2}{g_1}e^{-x}\right)+\frac{x}{1+\frac{g_1}{g_2}e^x}\right]=k\ln g_1
+	\end{equation}
+	From the distribution of canonical ensemble, we know that when the temperature is $T=0$, the system will stay on the ground state. Since the ground is g-fold degenerate, there are $g_1$ possible states. So the entropy is $S = k\ln g_1$.
+
+
+\section*{Problem 3.33} % (fold)
+\label{sec:problem_3_33}
+	Let's consider parameter $\frac{\mu H}{kT}$.\\
+	If you plot the Langevin's function:
+	$$L(x)=coth(x)-\frac{1}{x}$$ 
+	You will find when $\frac{\mu H}{kT}=5.12$ magnetic moment is saturated.\\
+% section problem_3_33 (end)
+
+
 
 \section*{Problem 3.41}
-The equilibrium temperature will be positive, since the energy of the whole system is not bounded from above. This case is a bit like the spin and lattice case. For the subsystem of spins, its energy is bounded from above, so it is possible to attain a negative temperature. While the subsystem of lattice, i.e. ideal gas in this problem, only has positive temperature. The whole system doesn't have a energy limit, so the temperature will only be positive. And energy may flow from the spin subsystem to the ideal gas.
+	The equilibrium temperature will be positive, since the energy of the whole system is not bounded from above. This case is a bit like the spin and lattice case. For the subsystem of spins, its energy is bounded from above, so it is possible to attain a negative temperature. While the subsystem of lattice, i.e. ideal gas in this problem, only has positive temperature. The whole system doesn't have a energy limit, so the temperature will only be positive. And energy may flow from the spin subsystem to the ideal gas.
 
 \section*{Problem 3.42}
-Paramagnetic system.
+	Paramagnetic system.
 
-For a given energy $E$, we can know that:
-\begin{eqnarray}
-E &=& \mu_B H (N_{\uparrow}-N_\downarrow)\\
-N &=& N_\uparrow + N_\downarrow
-\end{eqnarray}
-So the occupying number of up(down)-spin is
-$$
-N_\uparrow = \frac{1}{2}\left(N+\frac{E}{\mu_B H}\right)\quad N_\downarrow = \frac{1}{2}\left(N-\frac{E}{\mu_B H}\right)
-$$
-And the number of the possible states will be:
-\begin{equation}
-\Omega(N,E) = \mathrm{C}_{N}^{N_\uparrow}=\frac{N!}{N_\uparrow !N_\downarrow!}
-\end{equation}
-So the entropy in micro canonical ensemble representation is:
-\begin{eqnarray}
-S &=& k\ln\Omega(E,N) \nonumber\\
-&=& Nk\ln N -N_\uparrow k \ln N_\uparrow - N_\downarrow k \ln N_\downarrow\nonumber\\
-&=& Nk\ln N -k\frac{N\mu_B H +E}{2\mu_B H}\ln \frac{N\mu_B H +E}{2\mu_B H}-k\frac{N\mu_B H -E}{2\mu_B H}\ln\frac{N\mu_B H -E}{2\mu_B H}
-\end{eqnarray}
-This result is the same as (3.10.9) in Pathria's Book. Then the temperature:
-\begin{eqnarray}
-\frac{1}{T} &=& \frac{\partial S}{\partial E}\nonumber\\
-&=&-\frac{k}{2\mu_B H}\ln \frac{N\mu_B H +E}{2\mu_B H}-\frac{k}{2\mu_B H}+\frac{k}{2\mu_BH}\ln\frac{N\mu_B H-E}{2
-mu_B H}+\frac{k}{2\mu_BH}\nonumber\\
-&=&\frac{k}{2\mu_BH}\ln\left(\frac{N\mu_BH-E}{N\mu_BH+E}\right)
-\end{eqnarray}
-And this result is also the same as equation (3.10.8).
+	For a given energy $E$, we can know that:
+	\begin{eqnarray}
+	E &=& \mu_B H (N_{\uparrow}-N_\downarrow)\\
+	N &=& N_\uparrow + N_\downarrow
+	\end{eqnarray}
+	So the occupying number of up(down)-spin is
+	$$
+	N_\uparrow = \frac{1}{2}\left(N+\frac{E}{\mu_B H}\right)\quad N_\downarrow = \frac{1}{2}\left(N-\frac{E}{\mu_B H}\right)
+	$$
+	And the number of the possible states will be:
+	\begin{equation}
+	\Omega(N,E) = \mathrm{C}_{N}^{N_\uparrow}=\frac{N!}{N_\uparrow !N_\downarrow!}
+	\end{equation}
+	So the entropy in micro canonical ensemble representation is:
+	\begin{eqnarray}
+	S &=& k\ln\Omega(E,N) \nonumber\\
+	&=& Nk\ln N -N_\uparrow k \ln N_\uparrow - N_\downarrow k \ln N_\downarrow\nonumber\\
+	&=& Nk\ln N -k\frac{N\mu_B H +E}{2\mu_B H}\ln \frac{N\mu_B H +E}{2\mu_B H}-k\frac{N\mu_B H -E}{2\mu_B H}\ln\frac{N\mu_B H -E}{2\mu_B H}
+	\end{eqnarray}
+	This result is the same as (3.10.9) in Pathria's Book. Then the temperature:
+	\begin{eqnarray}
+	\frac{1}{T} &=& \frac{\partial S}{\partial E}\nonumber\\
+	&=&-\frac{k}{2\mu_B H}\ln \frac{N\mu_B H +E}{2\mu_B H}-\frac{k}{2\mu_B H}+\frac{k}{2\mu_BH}\ln\frac{N\mu_B H-E}{2
+	mu_B H}+\frac{k}{2\mu_BH}\nonumber\\
+	&=&\frac{k}{2\mu_BH}\ln\left(\frac{N\mu_BH-E}{N\mu_BH+E}\right)
+	\end{eqnarray}
+	And this result is also the same as equation (3.10.8).
+
+
+\section*{Problem 3.43} % (fold)
+\label{sec:problem_3_43}
+	The hamiltonian of the system is :
+	$$\boldsymbol{H}=e\phi (\boldsymbol{q})+\frac{1}{2m_e}\sum_{i=1}^{N}(\boldsymbol{P_i}-\frac{e}{c}\boldsymbol{A_i})^2$$
+	$$\dot{q_i}=-\frac{\partial{H}}{\partial{p_i}}\propto p_i$$
+	On the other hand 
+	$$\vec\mu=\frac{e}{2c}\vec{r}\times\vec{v}=\sum_{i=1}^{N}\vec{a_i}\cdot \dot{q_i}$$
+	$a_i$ are vector coefficients depending on the position coordinates.
+	$$\overline\mu=\frac{\mathlarger{\int}\mu*d\omega}{\mathlarger{\int}d\omega}\propto\mathlarger{\int_{ - \infty }^{ + \infty }}p*dp=0$$
+	The integrand is an odd function of $p$, so it vanishes.
+% section problem_3_43 (end)
+
+
 
 \end{document}
